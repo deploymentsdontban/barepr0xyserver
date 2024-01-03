@@ -1,18 +1,10 @@
 {
   "version": 2,
-  "builds": [
+  "functions": [
     {
       "src": "api/server.py",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "dist/server.py"
+      "runtime": "python3.9",
+      "handler": "main:handler"
     }
   ]
 }
