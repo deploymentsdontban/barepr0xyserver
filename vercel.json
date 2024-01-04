@@ -1,8 +1,6 @@
 {
   "version": 2,
   "functions": {
-    "api/server": {
-      "runtime": "python3.9"
-    }
+    "api/server": {}
   }
 }
