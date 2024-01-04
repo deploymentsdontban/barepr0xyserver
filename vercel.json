@@ -1,18 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "src",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
-    }
-  ],
   "functions": {
-    "api/server.py": {
-      "handler": "python",
-      "runtime": "python3.8"
+    "api/server": {
+      "runtime": "python3.9",
+      "handler": "server:app"
     }
   }
 }
